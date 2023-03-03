@@ -8,17 +8,17 @@ using FeedR.Shared.Serialization;
 using FeedR.Shared.Streaming;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services
-    .AddHttpContextAccessor()
-    .AddHostedService<PricingStreamBackgroundService>()
-    .AddHostedService<WeatherStreamBackgroundService>()
-    .AddSerialization()
-    .AddStreaming()
-    .AddRedis(builder.Configuration)
-    .AddRedisStreaming()
-    .AddMessaging()
-    .AddPulsar()
-    .AddSingleton<IPricingHandler, PricingHandler>();
+// builder.Services
+//     .AddHttpContextAccessor()
+//     .AddHostedService<PricingStreamBackgroundService>()
+//     .AddHostedService<WeatherStreamBackgroundService>()
+//     .AddSerialization()
+//     .AddStreaming()
+//     .AddRedis(builder.Configuration)
+//     .AddRedisStreaming()
+//     .AddMessaging()
+//     .AddPulsar()
+//     .AddSingleton<IPricingHandler, PricingHandler>();
     
 var app = builder.Build();
 app.UseCorrelationId();
