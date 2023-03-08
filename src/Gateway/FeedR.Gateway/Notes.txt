@@ -1,0 +1,42 @@
+﻿ORG route:
+------------------------------
+C:/_git/MyYARP/src/Gateway/FeedR.Gateway/bin/Debug/net7.0/FeedR.Gateway.exe 
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[63]
+      User profile is available. Using 'C:\Users\chvila\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+info: Yarp.ReverseProxy.Configuration.ConfigProvider.ConfigurationConfigProvider[1]
+      Loading proxy data from config.
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\_git\MyYARP\src\Gateway\FeedR.Gateway
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+***      Request starting HTTP/1.1 GET http://localhost:5000/aggregator - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/aggregator - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+***      Executing endpoint 'aggregator'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'aggregator'
+info: Yarp.ReverseProxy.Forwarder.HttpForwarder[9]
+***      Proxying to http://localhost:5010/ HTTP/2 RequestVersionOrLower no-streaming
+info: Yarp.ReverseProxy.Forwarder.HttpForwarder[9]
+      Proxying to http://localhost:5010/ HTTP/2 RequestVersionOrLower no-streaming
+info: Yarp.ReverseProxy.Forwarder.HttpForwarder[56]
+      Received HTTP/1.1 response 200.
+info: Yarp.ReverseProxy.Forwarder.HttpForwarder[56]
+      Received HTTP/1.1 response 200.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'aggregator'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'aggregator'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost:5000/aggregator - - - 200 - text/plain;+charset=utf-8 566.5782ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost:5000/aggregator - - - 200 - text/plain;+charset=utf-8 566.5782ms
+
+
+------------------------------

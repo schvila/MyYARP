@@ -1,4 +1,4 @@
-{
+﻿{
   "Logging": {
     "IncludeScopes": true,
     "LogLevel": {
@@ -8,15 +8,14 @@
       "Microsoft.Hosting.Lifetime": "Information"
     }
   },
-  "Urls": "http://localhost:6000",
+  
   "AllowedHosts": "*",
   "yarp": {
     "routes": {
       "aggregator": {
-        "clusterId": "clusterAggregator",
+        "clusterId": "aggregator",
         "match": {
-          "Hosts": ["aggregator.localhost"],
-          "path": "{**catch-all}"
+          "path": "/aggregator.localhost/{**catch-all}"
         },
         "transforms": [
           {
@@ -26,7 +25,7 @@
       }
     },
     "clusters": {
-      "clusterAggregator": {
+      "aggregator": {
         "destinations": {
           "destination1": {
             "address": "http://localhost:5010"
