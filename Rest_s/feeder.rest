@@ -2,4 +2,10 @@ GET  http://localhost:5000
 ###
 GET  http://localhost:5000/aggregator
 ###
-GET http://agregator.localhost
+GET http://aggregator.localhost:5000
+
+###
+GET  http://localhost:6000
+
+###
+GET http://aggregator.localhost:6000
